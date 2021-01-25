@@ -1,0 +1,128 @@
+body{
+  background-color: #000;
+  margin: 0;
+  color: #fff;
+  font-family: "Fira Code";
+}
+nav{
+  display: flex;
+  font-weight: 300;
+  height: 5vh;
+  width: 100vw;
+}
+svg{
+  height: 100%;
+  width: 100%;
+}
+button{
+  background: none;
+  border: none;
+  color: #fff;
+}
+#s_start, #s_reset{
+  width: 5vw;
+}
+.select{
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  width: inherit;
+  cursor: pointer;
+}
+.select.thing:before{
+  content: "";
+  height: 2px;
+  margin-top: 5vh;
+  background-color: white;
+  position: absolute;
+  width: 5%;
+}
+#clocks, #stopwatch, #timer{
+  display: none;
+  text-align: center;
+  justify-content: center;
+  height: 95vh;
+}
+#clocks.show, #stopwatch.show, #timer.show{
+  display: block;
+}
+.time{
+  font-size: 8em;
+  margin: 0;
+}
+#main_time, #main_sw, #main_t{
+  margin: 0;
+}
+#msec_time, #msec_sw, #msec_t{
+  font-size: 2rem;
+  margin: 0;
+}
+#date{
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#timer_button{
+  height: 42px;
+  width: 42px;
+}
+.timer_input{
+  width: 30px;
+  background: none;
+  color: #fff;
+  font-family: "Fira Code";
+}
+#analog, #sanalog, #tanalog{
+  width: 50vmin;
+  height: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: url("res/clockface.png");
+  background-size: cover;
+}
+#hour, #min, #sec, #shour, #smin, #ssec, #thour, #tmin, #tsec{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+#hour, #shour, #thour{
+  width: 30vmin;
+  height: 30vmin;
+}
+#min, #smin, #tmin{
+  width: 40vmin;
+  height: 40vmin;
+}
+#sec, #ssec, #tsec{
+  width: 45vmin;
+  height: 45vmin;
+}
+#hour::before, #shour::before, #thour::before{
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  width: 9px;
+  height: 50%;
+  z-index: 10;
+}
+#min::before, #smin::before, #tmin::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 50%;
+  background-color: #fff;
+  z-index: 11;
+}
+#sec::before, #ssec::before, #tsec::before{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 55%;
+  background-color: #f00;
+  z-index: 12;
+}
