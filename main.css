@@ -19,8 +19,9 @@ button{
   border: none;
   color: #fff;
 }
-#s_start, #s_reset{
-  width: 5vw;
+#s_start, #s_reset, #timer_button{
+  height: 42px;
+  width: 42px;
 }
 .select{
   display: flex;
@@ -47,14 +48,14 @@ button{
   display: block;
 }
 .time{
-  font-size: 8em;
+  font-size: 12vw;
   margin: 0;
 }
 #main_time, #main_sw, #main_t{
   margin: 0;
 }
 #msec_time, #msec_sw, #msec_t{
-  font-size: 2rem;
+  font-size: 2vw;
   margin: 0;
 }
 #date{
@@ -64,10 +65,6 @@ button{
   justify-content: center;
   display: flex;
   align-items: center;
-}
-#timer_button{
-  height: 42px;
-  width: 42px;
 }
 .timer_input{
   width: 30px;
